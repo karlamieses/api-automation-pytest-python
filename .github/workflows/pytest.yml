@@ -20,8 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip3 install --upgrade pip3
-          pip3 install -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Replace with your requirements file if different
 
       - name: Run pytest
-        run: pytest -n auto --html=GitHubActions.html
+        run: pytest
